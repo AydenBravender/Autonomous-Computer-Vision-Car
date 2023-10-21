@@ -5,7 +5,7 @@
 </div>
 
 ## Overview
-The main objective of this project was to create a simple robot that using computer vison could follow another robot. This project utilized many different components such as a Raspberry pi 4, L298N motor driver, USB cam, Motors and Battery packs as well as power regulators. This code is made to run on a Raspberry pi 4, and it uses a pre-trained model that I trained in a [previous repository.](https://github.com/AydenBravender/Spyder_RC_Car_TF_Model) Inside the src file there are 2 main python scripts, server.py, and computer_vision_transmitter.py. The latter one opens up a usb webcam on your raspberry pi, and detects the robot ahead of it. This data is then anaylazed to be sent via socket to server.py. Here, the script calculates the centroid of the object in respect to itself, and moves left or right depending on what the data indicates.
+The main objective of this project was to create a simple robot that using computer vison could follow another robot. This project utilized many different components such as a Raspberry pi 4, L298N motor driver, USB cam, Motors and Battery packs as well as power regulators. This code is made to run on a Raspberry pi 4, and it uses a pre-trained model that I trained in a [previous repository.](https://github.com/AydenBravender/Spyder_RC_Car_TF_Model) Inside the src file there are 2 main python scripts, server.py, and computer_vision_transmitter.py. The latter one opens up a usb webcam on your raspberry pi, and detects the robot ahead of it. This data is then analyzed to be sent via socket to server.py. Here, the script calculates the centroid of the object in respect to itself, and moves left or right depending on what the data indicates.
 
 ## Using Code
 
