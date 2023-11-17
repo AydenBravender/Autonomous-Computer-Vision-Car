@@ -26,7 +26,7 @@ drive.start(0) # starting the drive motor at a pre-set duty cycle
 steer.start(100)
 
 server_socket = socket.socket()
-server_socket.bind(('127.0.0.1', 11312))
+server_socket.bind(( , )) # replace with ip address
 server_socket.listen(1)
 
 data = []
