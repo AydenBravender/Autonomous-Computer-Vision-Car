@@ -195,7 +195,7 @@ while True:
         ymin, xmin, ymax, xmax = str(max_tuple[1]), str(max_tuple[2]), str(max_tuple[3]), str(max_tuple[4])
         our_list = '[' + ymin + ', ' + ymax + ', ' + xmin + ', ' + xmax + ']'
         client_socket = socket.socket()
-        client_socket.connect(('127.0.0.1', 11312))
+        client_socket.connect(( , )) # replace with IP addres
         data_to_send = our_list
         client_socket.send(data_to_send.encode())
         client_socket.close()
